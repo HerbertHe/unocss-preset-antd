@@ -1,0 +1,46 @@
+{
+  "name": "unocss-preset-antd",
+  "version": "0.0.1",
+  "description": "Ant Design compact preset for UnoCSS",
+  "author": "Herbert He <Herbert.He0229@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/HerbertHe/unocss-preset-antd",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HerbertHe/unocss-preset-antd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HerbertHe/unocss-preset-antd/issues"
+  },
+  "keywords": [
+    "unocss",
+    "unocss-preset"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.css"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "@unocss/core": "^0.39.3",
+    "@unocss/preset-mini": "^0.39.3"
+  },
+  "devDependencies": {
+    "unbuild": "^0.7.4"
+  }
+}
